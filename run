@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+echo Submitting jobscript > ../logs/run.log
+qsub -sync &>> ../logs/run.log
+
